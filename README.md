@@ -40,7 +40,7 @@ pytest
 
 ```
 
-Finally, to make sure that the reV CLIs are working, simply type the ```reV``` command into your terminal. If it was successfully installed you will see a printout of a help file showing the command format and a breif description of all the reV sub modules:
+Finally, to make sure that the reV CLIs are working, simply type the ```reV``` command into your terminal. If it was successfully installed you will see a printout of a help file showing the command format and a brief description of all the reV sub modules:
 
 ```
 Usage: reV [OPTIONS] COMMAND [ARGS]...
