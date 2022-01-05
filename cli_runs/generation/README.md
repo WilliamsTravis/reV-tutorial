@@ -21,7 +21,7 @@ Building a custom resource file will have its own page soon, but for now here's 
   3) For pvwattsv7, if you have any 2 out of the "ghi", "dni", or "dhi" inputs reV will calculate the third for you.
   4) The meta table must be included as the "meta" dataset. Each row corresponds to the x-position of the corresponding resource time series array. It must be converted to a structured array before you can store it and HDF5 file. If you have a pandas data frame you can use the following function to convert it:      
   
-    def to_sarray(self):
+    def to_sarray(df):
         """Create a structured array for storing in HDF5 files.
     
         Parameters
@@ -29,9 +29,6 @@ Building a custom resource file will have its own page soon, but for now here's 
         df : pandas.core.frame.DataFrame
           Meta file.
         """
-        # Create a copy
-        df = self._obj.copy()
-
         # For a single column
         def make_col_type(col, types):
 
@@ -55,10 +52,10 @@ Building a custom resource file will have its own page soon, but for now here's 
         v = df.values
         types = df.dtypes
         struct_types = [make_col_type(col, types) for col in df.columns]
-        dtypes = self.np.dtype(struct_types)
+        dtypes = np.dtype(struct_types)
 
         # The target empty array
-        array = self.np.zeros(v.shape[0], dtypes)
+        array = np.zeros(v.shape[0], dtypes)
 
         # For each type fill in the empty array
         for (i, k) in enumerate(array.dtype.names):
