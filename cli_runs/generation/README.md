@@ -71,5 +71,7 @@ Building a custom resource file will have its own page soon, but for now here's 
 
 
 
+Tutorial Notes:
 
+Use another word than "default" for the sam key, "default" might lead the user to think there is some sort of default sam config or resource file built into reV.
 
