@@ -1,0 +1,26 @@
+{
+  "analysis_years": [
+    2013
+  ],
+  "directories": {
+    "log_directory": "./logs/",
+    "output_directory": "./"
+  },
+  "execution_control": {
+    "memory_utilization_limit": 0.4,
+    "nodes": 1,
+    "sites_per_worker": 1
+  },
+  "log_level": "INFO",
+  "output_request": [
+    "cf_mean",
+    "cf_profile",
+    "ws_mean"
+  ],
+  "project_points": "./project_points.csv",
+  "resource_file": "/Users/twillia2/github/reV-tutorial/building_inputs/resource_files/test_resource_{}.h5",
+  "sam_files": {
+    "moderate_onshore": "./moderate_onshore.json"
+  },
+  "technology": "windpower"
+}

@@ -1,0 +1,10 @@
+{
+    "generation": {
+        "testing_gen_2013": {
+            "hardware": "local",
+            "fout": "testing_gen_2013.h5",
+            "dirout": "/Users/twillia2/github/reV-tutorial/building_inputs/testing/",
+            "job_status": "submitted"
+        }
+    }
+}

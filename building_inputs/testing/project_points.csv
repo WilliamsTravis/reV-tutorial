@@ -1,0 +1,3 @@
+,latitude,longitude,year,timesteps,description,config,gid
+0,25.396294,-80.57556,2013.0,8760.0,b'WIND Toolkit data from NREL downloaded on 2020-9-28',moderate_onshore,0
+1,28.00764,-81.08472,2013.0,8760.0,b'WIND Toolkit data from NREL downloaded on 2021-0-20',moderate_onshore,1

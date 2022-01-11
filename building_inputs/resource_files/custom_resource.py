@@ -22,6 +22,8 @@ PROFILES = "./inputs/*srw"
 def make_meta(metas):
     """Return structure meta array out of list of meta dicts."""
     df = pd.DataFrame(metas)    
+    df["timezone"] = -9  # <--------------------------------------------------- We just know this
+    df["elevation"] = 1_000  # <----------------------------------------------- We don't actually know this
     data = to_records_array(df)
     return data
 
@@ -41,16 +43,13 @@ def reformat_single(file):
 
     # And header are in the thrid row with units in the 4th
     headers = df.iloc[2, :4].values
-    units = df.iloc[3, :4]
-
-    # Oddly enough, the 5th row contains the hub height
-    hub_height = df.iloc[4, 0]
+    units = df.iloc[3, :4]  # <------------------------------------------------ We will need to check units and convert if they aren't right
 
     # Finally our data starts in the 6th row, extends to the 5th column
     data = df.iloc[5:, :4]
 
     # These headers need to be lower case and associated with a height
-    headers = [
+    headers = [  # <----------------------------------------------------------- We jus tknow all this too
         "temperature_2m",
         "pressure_2m",
         "windspeed_100m",
@@ -71,7 +70,7 @@ def time(year, steps):
     # Assume first day of the year
     time_format = "%Y-%m-%d %H:%M:%S"
     if steps == 8760:
-        idx = pd.date_range(f"{int(year)}-01-01", periods=8760, freq='H')
+        idx = pd.date_range(f"{int(year)}-01-01", periods=8760, freq='H')  # <- We know that it's hourly, it would be better to infer
     else:
         idx = pd.date_range(f"{int(year)}-01-01", periods=8784, freq='H')
     strings = [dt.datetime.strftime(t, time_format) for t in idx]
@@ -90,7 +89,6 @@ def build():
             if name not in datasets:
                 datasets[name] = []
             datasets[name].append(vector.values)
-
         metas.append(meta)
 
     # Build the meta file as a structured array
@@ -115,3 +113,6 @@ def build():
     ds.create_dataset(name="meta", data=meta)
     ds.close()
 
+
+if __name__ == "__main__":
+    build()
