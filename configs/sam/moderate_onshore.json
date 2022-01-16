@@ -1,23 +1,23 @@
 {
     "adjust:constant": 0,
-    "capital_cost": 5005000,  # Per turbine
-    "fixed_operating_cost": 214225,  # Per turbine per year
-    "fixed_charge_rate": 0.049,  # % in decimals
-    "system_capacity": 5500.0,  # KW
-    "variable_operating_cost": 0,  # We never do this, let's leave it at 0
-    "turb_generic_loss": 11.8,  # % as full numbers
-    "wind_farm_wake_model": 0,  # This corresponds to a sam wake model, leave at 0
+    "capital_cost": 5005000,
+    "fixed_operating_cost": 214225.0,
+    "fixed_charge_rate": 0.049,
+    "system_capacity": 5500.0,
+    "variable_operating_cost": 0,
+    "turb_generic_loss": 11.8,
+    "wind_farm_wake_model": 0,
     "wind_farm_xCoordinates": [
         0
     ],
     "wind_farm_yCoordinates": [
         0
     ],
-    "wind_resource_model_choice": 0,  # Default
-    "wind_resource_shear": 0.14,  # Default
-    "wind_resource_turbulence_coeff": 0.1,  # Default
-    "wind_turbine_hub_ht": 120,  # meter
-    "wind_turbine_powercurve_powerout": [  # In KW, corresponds to the list below
+    "wind_resource_model_choice": 0,
+    "wind_resource_shear": 0.14,
+    "wind_resource_turbulence_coeff": 0.1,
+    "wind_turbine_hub_ht": 120,
+    "wind_turbine_powercurve_powerout": [
         0.0,
         0.0,
         0.0,
@@ -120,7 +120,7 @@
         5500.0,
         0.0
     ],
-    "wind_turbine_powercurve_windspeeds": [  # In m/s
+    "wind_turbine_powercurve_windspeeds": [
         0.0,
         0.25,
         0.5,
@@ -223,5 +223,5 @@
         24.75,
         25.0
     ],
-    "wind_turbine_rotor_diameter": 175  # Meters
+    "wind_turbine_rotor_diameter": 175
 }
