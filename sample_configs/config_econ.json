@@ -8,29 +8,35 @@
         2012,
         2013
     ],
-    "append": true,
-    "cf_file": "PIPELINE",
+    "cf_file": "placeholder",
     "directories": {
         "log_directory": "./logs",
         "output_directory": "./"
     },
     "execution_control": {
         "allocation": "wetosa",
-        "nodes": 10,
+        "feature": "--qos=high",
+        "nodes": 20,
         "option": "eagle",
-        "memory": 90,
-        "memory_utilization_limit": 0.4,
         "sites_per_worker": 100,
-        "walltime": 3.0
+        "walltime": 4
     },
     "log_level": "INFO",
     "output_request": [
-        "lcoe_fcr"
+        "ppa_price",
+        "lcoe_nom",
+        "lcoe_real",
+        "capital_cost",
+        "project_return_aftertax_npv",
+        "flip_actual_irr"
     ],
-    "project_points": "/shared-projects/rev/projects/weto/fy21/atb/rev/project_points/project_points_onshore.csv",
-    "sam_files": {
-        "onshore": "/shared-projects/rev/projects/weto/fy21/atb/rev/sam_configs/moderate_onshore.json"
-    },
     "technology": "windpower",
-    "site_data": "/shared-projects/rev/projects/weto/fy21/atb/rev/site_data/4_moderate_eos.csv"
+    "project_points": "./_inputs/project_points_econ.csv",
+    "sam_files": {
+        "windpower_singleowner_7ws": "./_inputs/windpower_singleowner_7ws.json",
+        "windpower_singleowner_8ws": "./_inputs/windpower_singleowner_8ws.json",
+        "windpower_singleowner_9ws": "./_inputs/windpower_singleowner_9ws.json",
+        "windpower_singleowner_15ws": "./_inputs/windpower_singleowner_15ws.json"
+    },
+    "site_data": "placeholder"
 }
