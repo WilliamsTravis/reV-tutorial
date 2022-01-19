@@ -4,4 +4,12 @@ The inputs required for a reV-compatible resource file will depend on the SAM mo
 
 
 # Things to do
-Describe minimum inputs for each tech ... or else how to figure it out.
+Describe minimum inputs for each tech, or else how to figure out where to find this informations.
+
+Describe the attributes, meta file, time index, shape of the arrays.
+
+Show a nice image of a resource array with labels on the axis, point out a site on the x-axis and time period on the y-axis.
+Fastforward to a generation file and point out the same items in it.
+Go back to the meta file and point out the row with that site.
+
+
