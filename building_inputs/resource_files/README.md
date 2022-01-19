@@ -4,6 +4,8 @@ The inputs required for a reV-compatible resource file will depend on the SAM mo
 
 
 ### Things to do
+Finish the script, and perhaps use different input datasets. The SRWs are too awkward, and too much of it is pulling out the right meta information. 
+
 Describe minimum inputs for each tech, or else how to figure out where to find this informations.
 
 Describe the attributes, meta file, time index, shape of the arrays.
