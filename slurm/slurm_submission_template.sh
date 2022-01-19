@@ -14,5 +14,4 @@ source ~/.bashrc
 source ~/.bash_conda
 conda activate /path/to/your/sample/conda/environment/
 
-python sample_script.py
-
+reV -c /path/to/rev/pipeline.json pipeline --monitor
