@@ -20,14 +20,14 @@ Land use constraints can be added into the aggregation step to exclude developme
 
 # Getting Started - Installation
 
-The simplest way to install reV and it's supporting packages ([PySAM](https://github.com/NREL/pysam), [reVX](https://github.com/NREL/revx), [rex](https://github.com/NREL/rex), & [NRWAL](https://github.com/NREL/NRWAL)) is to create a conda environment and install rev through the nrel channel. However, there appear to be some depndency issues with this method recently, so we are going install directly from source with a developers install for now. Note that reV requires Python 3.7. Also note that this clone method requires you to set up your ssh keys in your github page (instructions [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)).
+The simplest way to install reV and it's supporting packages ([PySAM](https://github.com/NREL/pysam), [reVX](https://github.com/NREL/revx), [rex](https://github.com/NREL/rex), & [NRWAL](https://github.com/NREL/NRWAL)) is to create a conda environment and install rev through the nrel channel. However, there appear to be some depndency issues with this method recently, so we are going install directly from source with for now. Note that this clone method requires you to set up your ssh keys in your github page (instructions [here](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)).
 
 ```
 conda create -n rev python=3.8 -y
 conda activate rev
 git clone git@github.com:NREL/reV.git
 cd reV
-pip install -e .
+python setup.py install
 
 ```
 
