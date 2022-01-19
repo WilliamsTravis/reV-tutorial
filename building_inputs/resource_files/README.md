@@ -3,7 +3,7 @@
 The inputs required for a reV-compatible resource file will depend on the SAM module used in the generation step. These can be found in the SAM documentation here: [placeholder]()
 
 
-# Things to do
+### Things to do
 Describe minimum inputs for each tech, or else how to figure out where to find this informations.
 
 Describe the attributes, meta file, time index, shape of the arrays.
