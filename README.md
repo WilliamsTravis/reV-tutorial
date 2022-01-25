@@ -26,16 +26,8 @@ The simplest way to install reV and it's supporting packages ([PySAM](https://gi
 conda create -n rev python=3.8 -y
 conda activate rev
 git clone https://github.com/WilliamsTravis/reV-tutorial.git
-cd reV
+cd reV-tutorial
 python setup.py install
-```
-
-This method allows us to run the tests in the main repository. This can take a while and you'll probably be fine skipping it, but it can help to preclude some problems down the road:
-
-```
-pip install pytest
-cd tests
-pytest
 ```
 
 Finally, to make sure that the reV CLIs are working, simply type the ```reV``` command into your terminal. If it was successfully installed you will see a printout of a help file showing the command format and a brief description of all the reV modules:
