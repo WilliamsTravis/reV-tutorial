@@ -18,15 +18,15 @@ Land use constraints can be added into the aggregation step to exclude developme
   <h5 align="center"> Resource :arrow_right: Generation :arrow_right: Exclusions :arrow_right: Aggregation :arrow_right: Transmission :arrow_right: Energy and Costs :arrow_right: Representative Profiles </h5>
 
 
-# Getting Started - Installation
+# Getting Started - Installating reV
 
-The simplest way to install reV and it's supporting packages ([PySAM](https://github.com/NREL/pysam), [reVX](https://github.com/NREL/revx), [rex](https://github.com/NREL/rex), & [NRWAL](https://github.com/NREL/NRWAL)) is to create a conda environment and install rev through the nrel channel. However, there appear to be some depndency issues with this method recently, so we are going install directly from source with for now. 
+The simplest way to install reV and it's supporting packages ([PySAM](https://github.com/NREL/pysam), [reVX](https://github.com/NREL/revx), [rex](https://github.com/NREL/rex), & [NRWAL](https://github.com/NREL/NRWAL)) is to create a conda environment and install rev through the nrel channel.
 
 ```
 conda create -n rev python=3.8 -y
 conda activate rev
-git clone https://github.com/WilliamsTravis/reV-tutorial.git
-cd reV-tutorial
+git clone https://github.com/NREL/reV.git
+cd reV
 python setup.py install
 ```
 
@@ -58,6 +58,16 @@ Commands:
   rep-profiles              Run reV representative profiles using the...
   supply-curve              Run reV supply curve using the config file.
   supply-curve-aggregation  Run reV supply curve aggregation using the...
+```
+
+# Getting Started - Installating reV-tutorial
+
+The simplest way to install reV and it's supporting packages ([PySAM](https://github.com/NREL/pysam), [reVX](https://github.com/NREL/revx), [rex](https://github.com/NREL/rex), & [NRWAL](https://github.com/NREL/NRWAL)) is to create a conda environment and install rev through the nrel channel.
+
+```
+cd ..
+git clone https://github.com/WilliamsTravis/reV-tutorial.git
+cd reV-tutorial
 ```
 
 # Using the CLI Method
