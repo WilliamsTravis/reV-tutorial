@@ -77,3 +77,5 @@ Use another word than "default" for the sam key, "default" might lead the user t
 
 Add in "max_workers" parameters.
 
+Add in pysam variable look up.
+
