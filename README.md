@@ -25,7 +25,7 @@ The simplest way to install reV and it's supporting packages ([PySAM](https://gi
 ```
 conda create -n rev python=3.8 -y
 conda activate rev
-git clone git@github.com:NREL/reV.git
+git clone https://github.com/WilliamsTravis/reV-tutorial.git
 cd reV
 python setup.py install
 
