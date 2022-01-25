@@ -28,7 +28,6 @@ conda activate rev
 git clone https://github.com/WilliamsTravis/reV-tutorial.git
 cd reV
 python setup.py install
-
 ```
 
 This method allows us to run the tests in the main repository. This can take a while and you'll probably be fine skipping it, but it can help to preclude some problems down the road:
@@ -37,7 +36,6 @@ This method allows us to run the tests in the main repository. This can take a w
 pip install pytest
 cd tests
 pytest
-
 ```
 
 Finally, to make sure that the reV CLIs are working, simply type the ```reV``` command into your terminal. If it was successfully installed you will see a printout of a help file showing the command format and a brief description of all the reV modules:
@@ -68,7 +66,6 @@ Commands:
   rep-profiles              Run reV representative profiles using the...
   supply-curve              Run reV supply curve using the config file.
   supply-curve-aggregation  Run reV supply curve aggregation using the...
-
 ```
 
 # Using the CLI Method
