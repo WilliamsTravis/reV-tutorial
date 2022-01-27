@@ -9,14 +9,14 @@
         ]
     }
     
-### 2) SAM Config Parameter Name Spelling
+### 2) SAM config parameter name spelling
 
     "fixed_operating_costs": 1404000.0,  # This extra "s" on "_costs" caused an hour of confusion
     "fixed_charge_rate": 0.051,
     "system_capacity": 18000,
 
 
-## 3) Percentage Units
+## 3) Percentage units
 
     {
       "array_type": 2,
@@ -36,7 +36,7 @@
     }
 
 
-## 4) Tilt Parameter With Tracking for Solar
+## 4) Tilt parameter with tracking for solar
     {
       "array_type": 2,                  # This refers to 1-axis tracking
       "azimuth": 180,
