@@ -1,6 +1,6 @@
 ## A List of Common Problems When Configuring and Running reV
 
-### 1) Unneeded commas in the json configuration:
+### 1) Unneeded commas in the json configuration
     {
         "this": [
             "will",
@@ -16,7 +16,7 @@
     "system_capacity": 18000,
 
 
-## 3) Units
+## 3) Percentage Units
 
     {
       "array_type": 2,
@@ -24,11 +24,11 @@
       "capital_cost": 39767200,
       "clearsky": false,
       "dc_ac_ratio": 1.3,
-      "fixed_charge_rate": 0.096, # This is 9.6%
+      "fixed_charge_rate": 0.096,       # This is 9.6%
       "fixed_operating_cost": 260000,
-      "gcr": 0.4,  # This is 40%
-      "inv_eff": 96,  # and 96% 
-      "losses": 14.07566,   # and 14.08%
+      "gcr": 0.4,                       # This is 40%
+      "inv_eff": 96,                    # and 96% 
+      "losses": 14.07566,               # and 14.08%
       "module_type": 0,
       "system_capacity": 20000,
       "tilt": 0,
@@ -36,7 +36,7 @@
     }
 
 
-## Tracking for solar
+## Tilt Parameter With Tracking for solar
     {
       "array_type": 2,  # This refers to 1-axis tracking
       "azimuth": 180,
