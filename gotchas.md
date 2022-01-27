@@ -36,7 +36,7 @@
     }
 
 
-## Tilt Parameter With Tracking for Solar
+## 4) Tilt Parameter With Tracking for Solar
     {
       "array_type": 2,                  # This refers to 1-axis tracking
       "azimuth": 180,
