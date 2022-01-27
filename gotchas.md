@@ -27,8 +27,8 @@
       "fixed_charge_rate": 0.096,       # This is 9.6%
       "fixed_operating_cost": 260000,
       "gcr": 0.4,                       # This is 40%
-      "inv_eff": 96,                    # and 96% 
-      "losses": 14.07566,               # and 14.08%
+      "inv_eff": 96,                    # This is 96% 
+      "losses": 14.07566,               # And this is 14.08%
       "module_type": 0,
       "system_capacity": 20000,
       "tilt": 0,
@@ -36,9 +36,9 @@
     }
 
 
-## Tilt Parameter With Tracking for solar
+## Tilt Parameter With Tracking for Solar
     {
-      "array_type": 2,  # This refers to 1-axis tracking
+      "array_type": 2,                  # This refers to 1-axis tracking
       "azimuth": 180,
       "capital_cost": 39767200,
       "clearsky": false,
@@ -50,6 +50,6 @@
       "losses": 14.07566,
       "module_type": 0,
       "system_capacity": 20000,
-      "tilt": 0,  # Tracking has no single tilt value, set to 0
+      "tilt": 0,                        # Tracking has no single tilt value, set to 0
       "variable_operating_cost": 0
     }
