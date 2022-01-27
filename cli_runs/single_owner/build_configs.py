@@ -88,9 +88,9 @@ def build_configs():
     config["sam_files"]["wind"] = SAM
     config["output_request"] = [
         "ppa_price",
-        # "lcoe_nom",
+        "lcoe_nom",
         "lcoe_real",
-        # "capital_cost",
+        "cf_pretax_cashflow",
         "project_return_aftertax_npv",
         "flip_actual_irr"
     ]
